@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
-command: python test.py
-code: src
-environment: azureml://locations/centralindia/workspaces/7813c9c8-8c57-49b5-bc4b-ea21022358d0/environments/testenv/versions/1
+command: echo "hello world"
+environment:
+  image: library/python:latest
 compute: azureml:harithajith1
