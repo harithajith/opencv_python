@@ -1,5 +1,5 @@
 from sahi.model import Yolov5DetectionModel
-
+'''
 from azure.storage.blob import BlobServiceClient
 
 STORAGEACCOUNTURL = "https://testws2273653885.blob.core.windows.net"
@@ -13,7 +13,7 @@ blob_service_client_instance = BlobServiceClient(
 blob_client_instance = blob_service_client_instance.get_blob_client(
     CONTAINERNAME, BLOBNAME, snapshot=None)
 
-blob_data = blob_client_instance.download_blob()
+blob_data = blob_client_instance.download_blob()'''
 image_path = "./test.png"
 image = cv2.imread(image_path)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
