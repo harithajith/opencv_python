@@ -21,5 +21,4 @@ image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 detection_model = Yolov5DetectionModel(model_path="best299.pt",confidence_threshold=0.8,device="cpu")
 result = get_sliced_prediction(image,detection_model,slice_height = 416,slice_width = 416, overlap_height_ratio = 0.6, overlap_width_ratio = 0.6)
 result.export_visuals(export_dir="demo_data_src/")
-'''
-print("Hellow ")
+print("Done")
